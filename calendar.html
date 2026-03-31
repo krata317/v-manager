@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calendar</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+<div class="navbar">
+    <div class="logo" onclick="window.location.href='dashboard.html'">V-MANAGER</div>
+    <div class="nav-links">
+        <a href="dashboard.html">Home</a>
+        <a href="study.html">Study</a>
+        <a href="calendar.html">Calendar</a>
+        <a href="resources.html">Resources</a>
+        <a href="events.html">Events</a>
+        <a href="#" class="logout" onclick="handleLogout()">Logout</a>
+    </div>
+</div>
+
+<div class="container">
+
+    <h3 id="calendarTitle"></h3>
+
+    <div class="calendar-days">
+        <div>S</div><div>M</div><div>T</div>
+        <div>W</div><div>T</div><div>F</div><div>S</div>
+    </div>
+
+    <div id="calendarGrid" class="calendar-grid"></div>
+
+</div>
+
+<script src="js/storage.js"></script>
+<script src="js/calendar.js"></script>
+
+<div class="footer">
+    &copy; Made by Kratagya Gupta (ID: 24BCE1507)
+</div>
+
+</body>
+</html>

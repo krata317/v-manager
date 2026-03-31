@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resources</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+<div class="navbar">
+    <div class="logo" onclick="window.location.href='dashboard.html'">V-MANAGER</div>
+    <div class="nav-links">
+        <a href="dashboard.html">Home</a>
+        <a href="study.html">Study</a>
+        <a href="calendar.html">Calendar</a>
+        <a href="resources.html">Resources</a>
+        <a href="events.html">Events</a>
+        <a href="#" class="logout" onclick="handleLogout()">Logout</a>
+    </div>
+</div>
+
+<div class="container">
+
+    <div class="panel-box">
+
+        <iframe 
+            src="https://lms.vit.ac.in/login/index.php"
+            width="100%" 
+            height="500">
+        </iframe>
+    </div>
+
+</div>
+
+<script src="js/storage.js"></script>
+<script>
+let user = getCurrentUser();
+if (!user) window.location.href = "index.html";
+
+function handleLogout() {
+    logout();
+    window.location.href = "index.html";
+}
+</script>
+
+<div class="footer">
+    &copy; Made by Kratagya Gupta (ID: 24BCE1507)
+</div>
+
+</body>
+</html>

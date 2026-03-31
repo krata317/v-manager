@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Planner - Login</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+<div class="auth-container">
+
+    <div class="auth-box">
+        <h2>V-MANAGER</h2>
+
+        <div id="loginForm">
+            <h3>LOGIN</h3>
+            <input type="text" id="loginUserId" placeholder="User ID">
+            <input type="password" id="loginPassword" placeholder="Password">
+            <button onclick="login()">Login</button>
+            <p onclick="showRegister()">Create new account</p>
+        </div>
+
+        <div id="registerForm" style="display:none;">
+            <h3>Register</h3>
+            <input type="text" id="registerName" placeholder="Name">
+            <input type="text" id="registerUserId" placeholder="User ID">
+            <input type="password" id="registerPassword" placeholder="Password (min 4 chars)">
+            <button onclick="register()">Register</button>
+            <p onclick="showLogin()">Back to login</p>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="js/storage.js"></script>
+<script src="js/auth.js"></script>
+
+</body>
+</html>

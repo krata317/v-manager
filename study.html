@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Study</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+<div class="navbar">
+    <div class="logo" onclick="window.location.href='dashboard.html'">V-MANAGER</div>
+    <div class="nav-links">
+        <a href="dashboard.html">Home</a>
+        <a href="study.html">Study</a>
+        <a href="calendar.html">Calendar</a>
+        <a href="resources.html">Resources</a>
+        <a href="events.html">Events</a>
+        <a href="#" class="logout" onclick="handleLogout()">Logout</a>
+    </div>
+</div>
+
+<div class="container">
+
+    <div class="main-grid">
+
+        <div class="left-panel">
+
+            <div class="section-header">
+                <h3>TASKS</h3>
+                <button onclick="openTaskModal()">+ Add Task</button>
+            </div>
+
+            <div id="taskList"></div>
+
+        </div>
+
+        <div class="right-panel">
+
+            <div class="section-header">
+                <h3>SUBJECTS</h3>
+                <button onclick="openSubjectModal()">+ Add Subject</button>
+            </div>
+
+            <div id="subjectList"></div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div id="taskModal" class="modal">
+    <form class="modal-content" onsubmit="return false;">
+        <h3>Add Task</h3>
+
+        <label>Title</label>
+        <input type="text" id="taskTitle" required>
+
+        <label>Due Date</label>
+        <input type="date" id="taskDate" required>
+
+        <label>Subject</label>
+        <select id="taskSubject" required>
+            <option value="">Select Subject</option>
+        </select>
+        <div class="modal-actions">
+            <button type="submit" onclick="addTask()">Save</button>
+            <button onclick="closeTaskModal()">Cancel</button>
+        </div>
+    </form>
+</div>
+
+<div id="subjectModal" class="modal">
+    <form class="modal-content" onsubmit="return false;">
+        <h3>Add Subject</h3>
+        <input type="text" id="subjectName" placeholder="Subject Name" required>
+        <div class="modal-actions">
+            <button type="submit" onclick="addSubject()">Save</button>
+            <button onclick="closeSubjectModal()">Cancel</button>
+        </div>
+    </form>
+</div>
+
+<script src="js/storage.js"></script>
+<script src="js/study.js"></script>
+
+<div class="footer">
+    &copy; Made by Kratagya Gupta (ID: 24BCE1507)
+</div>
+
+</body>
+</html>

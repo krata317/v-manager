@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Events</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+<div class="navbar">
+    <div class="logo" onclick="window.location.href='dashboard.html'">V-MANAGER</div>
+    <div class="nav-links">
+        <a href="dashboard.html">Home</a>
+        <a href="study.html">Study</a>
+        <a href="calendar.html">Calendar</a>
+        <a href="resources.html">Resources</a>
+        <a href="events.html">Events</a>
+        <a href="#" class="logout" onclick="handleLogout()">Logout</a>
+    </div>
+</div>
+
+<div class="container">
+
+    <div class="section-header">
+        <h3>EVENTS</h3>
+        <button onclick="openEventModal()">+ Add Event</button>
+    </div>
+
+    <div id="eventsContainer"></div>
+
+</div>
+
+<div id="eventModal" class="modal">
+    <form class="modal-content" onsubmit="return false;">
+        <h3>Add Event</h3>
+
+        <label>Title</label>
+        <input type="text" id="eventTitle" required>
+
+        <label>Date</label>
+        <input type="date" id="eventDate" required>
+
+        <label>Description</label>
+        <input type="text" id="eventDesc">
+
+        <label>Club</label>
+        <input type="text" id="eventClub">
+
+        <label>Mode</label>
+        <select id="eventMode" required>
+            <option value="">Select Mode</option>
+            <option value="Online">Online</option>
+            <option value="Offline">Offline</option>
+        </select>
+
+        <label>Location / Link</label>
+        <input type="text" id="eventLocation">
+        <label></label>
+        
+        <div class="modal-actions">
+            <button type="submit" onclick="addEvent()">Save</button>
+            <button onclick="closeEventModal()">Cancel</button>
+        </div>
+    </form>
+</div>
+
+<script src="js/storage.js"></script>
+<script src="js/events.js"></script>
+
+<div class="footer">
+    &copy; Made by Kratagya Gupta (ID: 24BCE1507)
+</div>
+
+</body>
+</html>

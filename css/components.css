@@ -1,0 +1,169 @@
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.auth-box {
+    background: white;
+    padding: 30px;
+    width: 300px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.auth-box h2 {
+    margin-bottom: 20px;
+}
+
+.auth-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 8px 12px;
+    border: none;
+    background: var(--primary);
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.auth-box p {
+    color: #4a90e2;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.panel-box,
+.task-card,
+.event-card {
+    background: var(--card);
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.task-card {
+    font-size: 14px;
+}
+
+.panel-box h4 {
+    margin-top: 0;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.4);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+iframe {
+    border: none;
+    border-radius: 6px;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px 25px;
+    border-radius: 6px;
+    width: 320px;
+}
+
+.modal-content label {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 14px;
+}
+
+.modal-content input,
+.modal-content select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.overview-top {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 40px;
+}
+
+.canvas-box {
+    width: 140px;
+    height: 140px;
+}
+
+#progressCanvas {
+    width: 140px;
+    height: 140px;
+}
+
+.legend {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.legend p {
+    margin: 5px 0;
+}
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+}
+
+.green { background: green; }
+.orange { background: orange; }
+.red { background: red; }
+
+#calendarTitle {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.subject-selected {
+    background-color: #4a90e2 !important;
+    color: white !important;
+    border: 2px solid #4a90e2 !important;
+}

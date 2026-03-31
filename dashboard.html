@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+<div class="navbar">
+    <div class="logo" onclick="window.location.href='dashboard.html'">V-MANAGER</div>
+    <div class="nav-links">
+        <a href="study.html">Study</a>
+        <a href="calendar.html">Calendar</a>
+        <a href="resources.html">Resources</a>
+        <a href="events.html">Events</a>
+        <a href="#" class="logout" onclick="handleLogout()">Logout</a>
+    </div>
+</div>
+
+<div class="container">
+
+    <div class="main-grid">
+
+        <div class="left-panel">
+            <div class="header">
+                <h2 id="greeting"></h2>
+                <p id="date"></p>
+            </div>
+
+
+            <div class="section-header">
+                <h3>URGENT TASKS</h3>
+                <button onclick="goToStudy()">Go to Study</button>
+            </div>
+            <div id="urgentTasks"></div>
+
+            <div class="section-header">
+                <h3>UPCOMING EVENTS</h3>
+                <button onclick="goToEvents()">Go to Events</button>
+            </div>
+            <div id="eventsList"></div>
+
+        </div>
+
+        <div class="right-panel">
+
+            <div class="panel-box">
+
+                <h4>OVERVIEW</h4>
+
+                <div class="overview-top">
+                    <div class="canvas-box">
+                        <canvas id="progressCanvas" width="140" height="140"></canvas>
+                    </div>
+
+                    <div class="legend">
+                        <p id="legendCompleted"><span class="dot green"></span> Completed</p>
+                        <p id="legendPending"><span class="dot orange"></span> Pending</p>
+                        <p id="legendOverdue"><span class="dot red"></span> Overdue</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="panel-box">
+                <h4>QUICK ACCESS</h4>
+                <button onclick="quickAddTask()">Add Task</button>
+                <button onclick="quickAddEvent()">Add Event</button>
+                <button onclick="goToCalendar()">View Calendar</button>
+            </div>
+
+            <div class="panel-box">
+                <h4>QUICK LINKS</h4>
+                <button onclick="openLink('https://vtopcc.vit.ac.in/vtop/login')">VTOP</button>
+                <button onclick="openLink('https://lms.vit.ac.in/login/index.php')">LMS</button>
+                <button onclick="openLink('https://chennai.vit.ac.in/')">College Portal</button>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="js/storage.js"></script>
+<script src="js/dashboard.js"></script>
+
+<div class="footer">
+    &copy; Made by Kratagya Gupta (ID: 24BCE1507)
+</div>
+
+</body>
+</html>

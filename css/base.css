@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    flex: 1;
+}
+
+:root {
+    --primary: #4a90e2;
+    --green: #2ecc71;
+    --orange: #f39c12;
+    --red: #e74c3c;
+    --card: #ffffff;
+}

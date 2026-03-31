@@ -1,0 +1,106 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--primary);
+    padding: 12px 20px;
+    color: white;
+}
+
+.logo {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.nav-links a {
+    margin-left: 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.header h2 {
+    margin: 0;
+    font-size: 22px;
+}
+
+.header p {
+    margin: 5px 0 15px 0;
+    color: #666;
+}
+
+.container {
+    padding: 20px 30px;
+}
+
+.main-grid {
+    display: flex;
+    gap: 25px;
+}
+
+.left-panel {
+    width: 70%;
+}
+
+.right-panel {
+    width: 30%;
+}
+
+.events-section {
+    margin-top: 30px;
+}
+
+.logout {
+    margin-left: 20px;
+    color: #ffdddd;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+.calendar-cell {
+    background: white;
+    min-height: 90px;
+    padding: 6px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.calendar-item {
+    margin-top: 3px;
+    padding: 3px;
+    border-radius: 3px;
+    font-size: 10px;
+}
+
+.calendar-item {
+    background: var(--primary);
+    color: white;
+}
+
+.calendar-item.event {
+    background: var(--orange);
+}
+
+.calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.footer {
+    text-align: center;
+    padding: 8px;
+    font-size: 12px;
+    background: #f0f0f0;
+    color: #555;
+    margin-top: 20px;
+}
